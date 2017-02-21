@@ -1,4 +1,4 @@
-class Testeur{
+public class Testeur{
 
     public static void tester(Boolean bool) {
 	if(bool) System.out.println("OK");
