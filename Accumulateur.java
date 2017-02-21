@@ -12,8 +12,8 @@ public class Accumulateur {
     }
 
     public void setValeur(int valeur) {
-	this.valeur = valeur;
-	if(nonSignificatif==true)
-	    nonSignificatif=false;
+    	this.valeur = valeur;
+    	if(nonSignificatif==true)
+    		nonSignificatif=false;
     }
 }

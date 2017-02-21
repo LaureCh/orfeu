@@ -12,40 +12,36 @@ public class Processeur {
 	}
 
 
-	public Accumulateur getAcc() {
-		return acc;
+	public int getACC() {
+		int valeur=acc.getValeur();		
+		return valeur;
+	}
+
+	public void setACC(int i) {
+		 acc.setValeur(i);;
 	}
 
 
-	public void setAcc(Accumulateur acc) {
-		this.acc = acc;
+	public int getCo() {
+		int indice = co.getIndice();
+		return indice;
 	}
 
-
-	public CompteurOrdinal getCo() {
-		return co;
+	public void setCo(int i) {
+		co.setIndice(i);
 	}
-
-
-	public void setCo(CompteurOrdinal co) {
-		this.co = co;
-	}
-
 
 	public RegistreInstruction getRi() {
 		return ri;
 	}
 
-
 	public void setRi(RegistreInstruction ri) {
 		this.ri = ri;
 	}
 
-
 	public Memoire getMem() {
 		return mem;
 	}
-
 
 	public void setMem(Memoire mem) {
 		this.mem = mem;
