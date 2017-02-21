@@ -35,7 +35,8 @@ public class Memoire {
     public int getOctet(int i){
     
 	if (i > tabmemoire.length &&i<0){
-	    System.out.println("Adresse " + case +" non valide.");
+	    System.out.println("Adresse " + i +" non valide.");
+	    return -1;
 	}
 
 	else{
@@ -58,10 +59,11 @@ public class Memoire {
     	}
     }
 
-    public void getMot(int casemot){
+    public int getMot(int casemot){
     
 	if (casemot > tabmemoire.length &&casemot<0){
 	    System.out.println("Adresse " + casemot +" non valide.");
+	    return -1;
 	}
 
 	else{

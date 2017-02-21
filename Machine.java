@@ -14,7 +14,6 @@ public class Machine {
 	}
 		
 	public int accumulateur () {
-
 		return 39;
 	}
 }
