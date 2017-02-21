@@ -4,11 +4,12 @@ public class Processeur {
 	private RegistreInstruction ri;
 	private Memoire mem;
 	
-	public Processeur(){  //constructeur
+	
+	public Processeur(int taille){  //constructeur
 		acc = new Accumulateur();
 		co = new CompteurOrdinal();
 		ri = new RegistreInstruction();
-		mem = new Memoire();
+		mem = new Memoire(taille);
 	}
 
 
