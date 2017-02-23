@@ -1,19 +1,23 @@
 public class RegistreInstruction {
-	private MotMemoire mmRI;
-	private boolean nonSignificatif;
+	private Ligne lRI;
+	//private boolean nonSignificatif;
 	
 	
 	public RegistreInstruction(){
-		mmRI = new MotMemoire();
-		nonSignificatif = true;
+		lRI = new Ligne();
+		//nonSignificatif = true;
 	}
 
-
-	public MotMemoire getMmRI() {
-		return mmRI;
+	public Ligne getRI() {
+		return lRI;
 	}
 
-	public void setMmRI(MotMemoire mmRI) {
-		this.mmRI = mmRI;
+	public void setRI(Ligne lRI) {
+		this.lRI = lRI;
 	}
+	
+	public void setRI(int i){ //méthode crée juste pour traiter cette instruction p.setRI(0x4006);
+		this.lRI = lRI; //il faut créer une méthode pour que le int reçu puisse être créé en ligne et être stocké en mémoire.
+	}
+
 }

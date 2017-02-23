@@ -7,11 +7,11 @@ public class Accumulateur {
 	nonSignificatif=true;
     }
 
-    public int getValeur() {
+    public int getACC() {
 	return valeur;
     }
 
-    public void setValeur(int valeur) {
+    public void setACC(int valeur) {
     	this.valeur = valeur;
     	if(nonSignificatif==true)
     		nonSignificatif=false;

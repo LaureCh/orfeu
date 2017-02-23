@@ -1,5 +1,5 @@
-/*
-Définition des méthodes setOctet, getOctet, getMot et setMot 
+/* Développeur principal : Tupac.
+Définition des méthodes setOctet, getOctet, getLigne et setLigne 
  */
 
 //import java.util.Iterator;
@@ -16,7 +16,7 @@ public class Memoire {
     }
 
   /*  public Memoire() {
-	this.mots = new Vector<MotMemoire>();
+	this.lignes = new Vector<MotMemoire>();
 	//ajouter iterator
     }*/
 
@@ -45,29 +45,30 @@ public class Memoire {
     }
 
     /* 
-       Je ne suis pas trop sur des méthodes créées ci-dessous car rien ne définit la longueur d'un mot. Donc elles fonctionnent sur la base de 1 mot = 1 octet. (Tupac)
+       Je ne suis pas trop sur des méthodes créées ci-dessous car rien ne définit la longueur d'un mot. Donc elles fonctionnent sur la base de 1 mot = 2 octets. (Tupac)
+       Ca m'étonnerait ! (Jérome)
     */
 
-    public void setMot(int adrmot, int valmot){
+    public void setLigne(int adrligne, int valeurligne){
     
-	if (adrmot > tabmemoire.length && adrmot<0){
-	    System.out.println("Adresse " +adrmot+" non valide.");
+	if (adrligne > tabmemoire.length && adrligne<0){
+	    System.out.println("Adresse " +adrligne+" non valide.");
 	}
 	else{
-	    tabmemoire[adrmot]=valmot;
-		System.out.println("La valeur " + valmot + " a été enregistrée à l'adresse de l'octet "+ adrmot+".\n");
+	    tabmemoire[adrligne]=valeurligne;
+		System.out.println("La valeur " + valeurligne + " a été enregistrée à l'adresse de l'octet "+ adrligne+".\n");
     	}
     }
 
-    public int getMot(int casemot){
+    public int getLigne(int caseligne){
     
-	if (casemot > tabmemoire.length &&casemot<0){
-	    System.out.println("Adresse " + casemot +" non valide.");
+	if (caseligne > tabmemoire.length &&caseligne<0){
+	    System.out.println("Adresse " + caseligne +" non valide.");
 	    return -1;
 	}
 
 	else{
-	    return tabmemoire[casemot];
+	    return tabmemoire[caseligne];
 	}
 
 
